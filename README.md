@@ -40,6 +40,46 @@
 
 ## 실행 화면
 
+![인트로](/산출물/동작GIF/1-인트로.gif)
+
+처음 사이트 접속화면 입니다.
+
+![로그인](/산출물/동작GIF/2-로그인.gif)
+
+로그인입니다.
+
+![랭킹](/산출물/동작GIF/5-랭킹.gif)
+
+랭킹은 팔로우, 전체 / 카테고리 별/ 한달, 전체를 기준으로 정렬합니다.
+
+![마이챌린지](/산출물/동작GIF/6-마이챌린지.gif)
+
+마이리뷰에서 현재 진행중인 챌린지 별로 당일 달력에 표시됩니다.
+
+![마이리뷰및댓글](/산출물/동작GIF/7-마이리뷰및댓글.gif)
+
+챌린지가 끝나고 리뷰를 남긴 후 그것에 대한 댓글까지 입니다.
+
+![팔로우팔로잉](/산출물/동작GIF/8-팔로우팔로잉.gif)
+
+현재 팔로우 된 사람과 팔로잉 된 사람, 검색 입니다.
+
+![타유저리뷰및업적](/산출물/동작GIF/9-타유저리뷰및업적.gif)
+
+타 유저의 리뷰 및 업적을 봅니다.
+
+![챌린지생성1](/산출물/동작GIF/10-챌린지생성1.gif)
+
+챌린지 생성 과정입니다.
+
+![챌린지생성4](/산출물/동작GIF/13-챌린지생성4.gif)
+
+챌린지 생성 과정입니다.
+
+![챌린지디테일및인증](/산출물/동작GIF/14-챌린지디테일및인증.gif)
+
+챌린지에 대한 상세정보와 인증을 다룹니다.
+
 ## 개발환경
 
 |   분류   |                                        정보                                         |
@@ -178,70 +218,27 @@ Refac : 기능 변화 없이 코드 내부 구조 변경하는 경우
 
 ### Gantt chart
 
-**Sub Project2**
+**Project 2 ~ 3주차**
 
-```mermaid
-gantt
-    dateFormat  YYYY-MM-DD
-    title       CHABIT 2-3주차 진행상황
-    %% excludes    01-23, 01-24
-    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
+![img.png](/산출물/진행도.PNG)
 
-    section 프로젝트 기획
-    기능 목록 상세 도출			:done, plan1, 2021-01-18, 2d
-    화면 정의서				  :done, plan2, 2021-01-19, 4d
-    와이어 프레임             :done, plan3, 2021-01-21, 4d
+**Project 4주차**
 
-	section Front end
-    UI 설계      	 :done, front1, 2021-01-23, 4d
-    디렉토리 구조 짜기		  	:done,  front2, 2021-01-26, 1d
-    메인 화면 컴포넌트		 	 :active, front3, after front2, 3d
-    헤더 컴포넌트   	  :active, front4, after front2, 2d
-    푸터 컴포넌트         :active, front5, after front2, 1d
-    회원 가입 컴포넌트  : front6, after front4, 1d
+![img.png](/산출물/진행도2.PNG)
 
-    section Back end
-    ER 다이어그램 작성     	 :done, back1, 2021-01-21, 2d
-    DB 테이블 설계		:done, back2, after back1, 3d
-    MySQL & Spring Boot 환경 설정     	 :done, back3, after back2, 1d
-    JPA 엔티티 디자인   :crit, back4, after back3, 3d
-    회원 CRUD 제작   :active, back5, 2021-01-27, 3d
+**Project 5주차**
 
-    section 배포
-    Dockerfile 작성 :done, deploy1, 2021-01-26, 1d
-    배포 환경 설정 :done,    deploy2, 2021-01-26, 2d
-    접속 확인 :done, deploy3, 2021-01-27, 1d
-```
+![img.png](/산출물/진행도3.PNG)
 
-**Sub Project3**
+**Project 6주차**
 
-```mermaid
-gantt
-    dateFormat  YYYY-MM-DD
-    title       CHABIT 4주차 진행상황
-    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
+![img.png](/산출물/진행도4.PNG)
 
-	section Front end
-   시작페이지           : done, front1, 2021-02-01, 1d
-   로그인 & 회원가입    : done, front2, 2021-01-30, 2d
-   네비게이션 바        : done, front3, 2021-02-01, 1d
-   랭킹 페이지          : done, front4, 2021-02-01, 2d
-   메인 화면            : done, front5, after front2, 1d
-   팝업 창              : done, front6, 2021-02-01, 2d
-   회원 관리 페이지      :active, front7, after front3, 1d
-   마이 페이지          :active, front8, after front5, 2d
-   팔로우 페이지        :done, front9, after front6, 3d
-   챌린지 관련 페이지   :active, front10, 2021-02-02, 3d
 
-    section Back end
-    팔로잉 기능 :done , back1, 2021-02-01, 1d
-    챌린지 기능 :done, back2, 2021-01-30, 4d
-    챌린지 리뷰 : back3, 2021-02-03, 2d
-    해쉬태그 :done, back4, after back2, 1d
-    인증 기능 : crit, back5, after back2, 3d
-    업적&뱃지 :active, back6, after back3, 1d
+## 최종 산출물
 
-    section 배포(예정)
-    Jenkins 세팅 :done, deploy1, 2021-02-02, 3d
-    Dockerfile 수정 :done, deploy2, 2021-02-02, 2d
-```
+<a href="https://youtu.be/TpePj0ehrXI">UCC</a>
+
+<a href="https://github.com/junghyun100/CHABIT/blob/develop/%EC%82%B0%EC%B6%9C%EB%AC%BC/CHABIT%20%EC%B5%9C%EC%A2%85%20%EB%B0%9C%ED%91%9C.pdf">PDF</a>
+
+<a href="https://www.notion.so/1-961ababbeced4693839e15be69c383d5">회고</a>
